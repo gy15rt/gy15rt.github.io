@@ -1,0 +1,97 @@
+
+
+/** Style sheet for assignment 1 website **/
+
+/** set font for entire page using '*' sans-serif is better for dyslexics **/
+*{font-family: 'Open Sans', sans-serif;}
+
+
+/** colours and settings for text/icons/list **/
+body {background-color: linen;}
+h1 {color: white;}
+h2 {color: black;}
+p  {color: black;}
+i  {color:white;
+	margin: 5px;}
+a  {text-decoration: none;}
+
+
+/** for resizing images on different screens (border radius = curved edges) **/
+img {
+    max-width: 50%;
+    height: auto;
+	object-fit:cover;
+	border-radius:10px;
+}
+
+/** settings for container elements - this code is adapted from https://www.w3schools.com/html/html_layout.asp accessed 12/12/2017 **/
+div.container {
+	
+    width: 100%;
+    border: 1px solid gray ;
+}
+
+header {
+    padding: 1em;
+    color: white;
+    background-color: rgb(0,128,128);
+    clear: left;
+    text-align: left;
+	border-radius: 10px;
+}
+
+footer {
+    padding: 1em;
+    color: white;
+    background-color: rgb(0,128,128);
+    clear: left;
+    text-align: right;
+	border-radius: 10px;
+}
+
+nav {
+	list-style-type: none;
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
+}
+
+article {
+    margin-left: 186px;
+    border-left: 2px solid gray;
+    padding: 1em;
+    overflow: hidden;
+	text-align: justify;
+	
+}
+
+/** list text in navigation bar on left (ul = unordered list) - this code is adapted from https://www.w3schools.com/css/css_navbar.asp **/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 170px;
+    background-color: linen;
+}
+
+li a {
+    display: block;
+    color: black;
+    padding: 8px 16px;
+	border-radius: 10px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color:rgb(0,128,128);
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: rgb(0, 128, 128);
+    color: white;
+}
+
+
+
